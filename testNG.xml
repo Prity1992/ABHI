@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Pricing" parallel="tests">
+  <parameter name="BrowserName" value="Desktop"/>
+  <parameter name="LoBName" value="Pricing"/>
+  <parameter name="TestScenario_RepositoryFileIndex" value="TCS_Return\TestScenarioSuite\CalculationScanerio\0003_ScenarioSuite.xlsx"/>
+  <parameter name="TestData_RepositoryFile" value="TCS_Return\TestDataSuite\CalculationData\0002_TestDataSuite.xlsx"/>
+  <test verbose="2" name="BDB_Login_002">
+    <parameter name="ScriptReference" value="BDBDoubleLoginFlow"/>
+    <parameter name="ScenarioID" value="BDB_Login_002"/>
+    <parameter name="Description" value=""/>
+    <parameter name="Product" value="Positive"/>
+    <parameter name="Module" value="BDB"/>
+    <parameter name="ScenarioUID" value="BDB_Login_002"/>
+    <classes>
+      <class name="testRunner.TestExecutionSuite"/>
+    </classes>
+  </test> <!-- BDB_Login_002 -->
+</suite> <!-- Pricing -->
